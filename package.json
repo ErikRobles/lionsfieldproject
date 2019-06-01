@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "lionsfieldcom": "npm run start --prefix lionsfieldcom",
+    "dev": "concurrently \"npm run server\" \"npm run lionsfieldcom\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.2.1",
+    "nodemon": "^1.19.1"
+  }
+}
